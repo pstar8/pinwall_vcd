@@ -69,10 +69,7 @@ export default function StickyNote({ note, isAdmin, onDelete, onToggleComments, 
       {/* Content */}
       <div 
         className="flex-1 overflow-y-auto custom-scrollbar mt-2 text-xl md:text-2xl whitespace-pre-wrap break-words"
-        onClick={(e) => {
-          // If we are just viewing, open comments. Prevent triggering if dragging
-          onClick(note);
-        }}
+        onClick={() => onClick(note)}
       >
         {note.content}
       </div>

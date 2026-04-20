@@ -69,7 +69,7 @@ export default function Home() {
             <Plus size={64} />
           </div>
           <h2 className="text-3xl font-bold mb-2">Create a Wall</h2>
-          <p className="text-xl text-dark-brown/60 mb-6">Start a new blank corkboard. You'll get an admin key automatically.</p>
+          <p className="text-xl text-dark-brown/60 mb-6">Start a new blank corkboard. You&apos;ll get an admin key automatically.</p>
           <button
             onClick={handleCreateRoom}
             disabled={isCreating}
