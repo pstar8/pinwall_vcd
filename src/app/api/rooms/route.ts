@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { supabase } from '@/utils/supabase';
 import { v4 as uuidv4 } from 'uuid';
 
+export const dynamic = 'force-dynamic';
+
 function generateRoomCode() {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   let result = '';

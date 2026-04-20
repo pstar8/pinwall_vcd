@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { supabase } from '@/utils/supabase';
 
+export const dynamic = 'force-dynamic';
+
 export async function PATCH(request: Request) {
   try {
     const body = await request.json();
